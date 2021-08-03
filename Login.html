@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Register</title>
+    <meta thhp-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="sty.css">
+</head>
+
+<body>
+    <div class="nav">
+<div class="container" id="container" >
+	<div class="form-container sign-in-container">
+		<form class="reg-form" name="validation" action="interfacee.html" method="POST">
+			<h2>Login</h2>
+			<input class="reg-inp" type="ssid" name="ssid" placeholder="SSID" required/>
+			<input class="reg-inp" type="password" name="Password" placeholder="PASSWORD" required/>
+			<button class="reg-button">Login</button>
+		</form>
+	</div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function validateForm() { 
+    var SS_ID= registration.Name.value;
+    if(SS_ID =="")
+    {
+    alert("SSID is required");
+    } 
+    var pass = registration.Password.value; 
+    if (pass.length != 8 ) { 
+    alert("Password should not be empty and length should be exactly 8 charachters");
+    }
+    }
+    </script>    
+</body>
+</html>
